@@ -1,45 +1,58 @@
 ﻿using System;
+using System.IO;
 
-class GameEngine {
-    static void Main(string[] args) {
-        Console.WriteLine("Welcome to My Game!");
+class ScriptEngine
+{
+    public void ExecuteScript(string script)
+    {
+        // TODO: Implement script execution
+    }
+}
 
-        // Define game logic and structure
-        Player player = new Player();
-        Room room1 = new Room("Room 1", "You are in a dark room.");
-        Room room2 = new Room("Room 2", "You are in a brightly lit room.");
-        player.CurrentRoom = room1;
+class Game
+{
+    static void Main()
+    {
+        ScriptEngine scriptEngine = new ScriptEngine();
 
-        // Implement game user interface and flow
-        string command = "";
-        while (command != "quit") {
-            Console.WriteLine(player.CurrentRoom.Description);
+        Console.WriteLine("Welcome to the game!");
+        Console.WriteLine("Type 'help' for a list of commands.");
+
+        while (true)
+        {
             Console.Write("> ");
-            command = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            if (command == "go east") {
-                player.CurrentRoom = room2;
-            } else if (command == "go west") {
-                player.CurrentRoom = room1;
-            } else {
-                Console.WriteLine("Invalid command.");
+            if (input == "quit")
+            {
+                break;
+            }
+            else if (input == "help")
+            {
+                Console.WriteLine("Available commands:");
+                Console.WriteLine("quit - Quit the game");
+                Console.WriteLine("help - Show a list of commands");
+            }
+            else if (input.StartsWith("run "))
+            {
+                string scriptFilename = input.Substring(4);
+
+                if (File.Exists(scriptFilename))
+                {
+                    string script = File.ReadAllText(scriptFilename);
+                    scriptEngine.ExecuteScript(script);
+                }
+                else
+                {
+                    Console.WriteLine("Script file not found.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("I don't understand.");
             }
         }
 
         Console.WriteLine("Thanks for playing!");
-    }
-}
-
-class Player {
-    public Room CurrentRoom { get; set; }
-}
-
-class Room {
-    public string Name { get; set; }
-    public string Description { get; set; }
-
-    public Room(string name, string description) {
-        Name = name;
-        Description = description;
     }
 }
