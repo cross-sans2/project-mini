@@ -1,0 +1,15 @@
+/home/cross/Desktop/project mini/bin/Debug/net6.0/project mini
+/home/cross/Desktop/project mini/bin/Debug/net6.0/project mini.deps.json
+/home/cross/Desktop/project mini/bin/Debug/net6.0/project mini.runtimeconfig.json
+/home/cross/Desktop/project mini/bin/Debug/net6.0/project mini.dll
+/home/cross/Desktop/project mini/bin/Debug/net6.0/project mini.pdb
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.csproj.AssemblyReference.cache
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.GeneratedMSBuildEditorConfig.editorconfig
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.AssemblyInfoInputs.cache
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.AssemblyInfo.cs
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.csproj.CoreCompileInputs.cache
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.dll
+/home/cross/Desktop/project mini/obj/Debug/net6.0/refint/project mini.dll
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.pdb
+/home/cross/Desktop/project mini/obj/Debug/net6.0/project mini.genruntimeconfig.cache
+/home/cross/Desktop/project mini/obj/Debug/net6.0/ref/project mini.dll

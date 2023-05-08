@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "06rJP7tT2j6gAhscxW0VrZIdZ3FYxfDtrXdjjqEVnACaMFD3JziGj9oVunz6fSg4RxgbBB4E4MQ8O1PT7XVyAg==",
+  "success": true,
+  "projectFilePath": "/home/cross/Desktop/project mini/project mini.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/microsoft.netcore.app.ref/6.0.8/microsoft.netcore.app.ref.6.0.8.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
